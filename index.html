@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI検索時代のローカルSEO・GBP戦略 勉強会</title>
+<style>
+    :root {
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --text-main: #1e293b;
+        --text-muted: #64748b;
+        --primary: #2563eb;
+        --primary-light: #eff6ff;
+        --accent: #d97706;
+        --accent-light: #fef3c7;
+        --border: #e2e8f0;
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        line-height: 1.7;
+        padding: 40px 20px;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    /* スライドカード風のコンテナ */
+    .slide {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 48px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    
+    .slide-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 16px;
+        margin-bottom: 32px;
+    }
+    .slide-number {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--primary);
+        background: var(--primary-light);
+        padding: 4px 12px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .slide-title {
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: var(--text-main);
+    }
+    
+    /* コンテンツパーツ */
+    h3 {
+        font-size: 1.2rem;
+        color: var(--primary);
+        margin: 24px 0 12px 0;
+        font-weight: 700;
+    }
+    p {
+        margin-bottom: 16px;
+        color: #334155;
+    }
+    .lead-text {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: #0f172a;
+        background: var(--primary-light);
+        padding: 20px;
+        border-left: 4px solid var(--primary);
+        border-radius: 0 8px 8px 0;
+        margin-bottom: 24px;
+    }
+    
+    /* グリッドレイアウト */
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 20px;
+    }
+    .card-box {
+        background: #f8fafc;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 24px;
+    }
+    .card-box h4 {
+        font-size: 1.05rem;
+        color: var(--text-main);
+        margin-bottom: 10px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    /* リスト要素 */
+    ul {
+        margin: 12px 0 20px 24px;
+    }
+    li {
+        margin-bottom: 8px;
+        color: #334155;
+    }
+    
+    /* データ・ソース強調 */
+    .data-box {
+        background: var(--accent-light);
+        border: 1px solid #fde68a;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .data-box h4 {
+        color: #b45309;
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .data-metric {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: #92400e;
+        margin-bottom: 4px;
+    }
+    .source-note {
+        font-size: 0.8rem;
+        color: #64748b;
+        margin-top: 8px;
+        font-style: italic;
+    }
+
+    .highlight {
+        color: var(--primary);
+        font-weight: 700;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- スライド1 -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="slide-number">Slide 01</span>
+            <h2 class="slide-title">検索のパラダイムシフトと「甘くない未来」</h2>
+        </div>
+        
+        <div class="lead-text">
+            「うちはBtoBだから」「うちは製造業だからネットは関係ない」——その油断が、自社の存在価値を市場から消し去ります。
+        </div>
+
+        <p>今、私たちの情報探索行動は、キーワードを打ち込んで上から順にホームページを見る「従来の検索」から、AIが答えを要約・提示する「AI検索（AI Overviews / LLM）」へと激変しています。</p>
+        
+        <div class="grid-2">
+            <div class="card-box">
+                <h4>🚨 既存SEOが通じない理由</h4>
+                <p>キーワードを並べ立てるだけの古いSEO手法では、AIの引用元（レコメンド）に選ばれません。AIは「ホームページの記載情報の正確性」「実態の裏付け（マップ・口コミ）」を厳格に審査しています。</p>
+            </div>
+            <div class="card-box">
+                <h4>⚠️ 放置する企業の末路</h4>
+                <p>検索結果の最上部にAI要約が表示されるため、下位のホームページへのクリック率は激減。ネット上に「信頼できる実態」を発信していない企業は、存在しないものとみなされます。</p>
+            </div>
+        </div>
+
+        <div class="data-box">
+            <h4>【エビデンスデータ】検索行動とクリック率の激変</h4>
+            <div class="data-metric">約48%〜50%</div>
+            <p>全Google検索におけるAI要約（AI Overviews）の出現率（米国およびグローバルデータ）。さらに、AI要約が表示された場合、従来の最上位オーガニック検索のクリック率は<strong>約34%〜58%低下</strong>しています。</p>
+            <div class="source-note">出典: Advanced Web Ranking / Conductor / Ahrefs 検索動向調査（2025〜2026年最新データ）</div>
+        </div>
+    </div>
+
+    <!-- スライド2 -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="slide-number">Slide 02</span>
+            <h2 class="slide-title">なぜ「非飲食業・製造業・BtoB」にGBPが命取りなのか？</h2>
+        </div>
+        
+        <div class="lead-text">
+            採用も、新規の企業間取引（BtoB）も、すべての意思決定者は「事前のGoogleマップ確認」を不可欠のプロセスにしています。
+        </div>
+
+        <p>Googleビジネスプロフィール（GBP）やGoogleマップは、飲食店や小売りのためのツールではありません。非飲食業や地方のBtoB企業こそ、その影響力が業績を左右します。</p>
+
+        <div class="grid-2">
+            <div class="card-box">
+                <h4>👥 採用における決定的な影響</h4>
+                <p>求職者（特に若手やUIターン層、その親世代）は、応募前に必ず企業名や工場名をGoogleマップで検索します。オフィスの外観、工場の綺麗さ、働く社員の雰囲気、そして「リアルなクチコミ」が応募の大きな壁（または後押し）になります。</p>
+            </div>
+            <div class="card-box">
+                <h4>🤝 BtoB取引・パートナー選定</h4>
+                <p>元請け企業や発注元が新規の加工会社や専門業者を探す際、カタログだけでなくマップ上の評価、写真、正確な営業時間を確認します。情報が未整備な企業は「実態のないリスク企業」とみなされ、検討の土俵に上がりません。</p>
+            </div>
+        </div>
+
+        <div class="data-box">
+            <h4>【エビデンスデータ】ローカル意図とアクションの急増</h4>
+            <div class="data-metric">全検索の46% 〜 50%</div>
+            <p>すべての検索クエリには地域・場所の意図（ローカル意図）が含まれており、Googleビジネスプロフィール経由のアクション（ウェブサイト誘導・ルート検索・電話など）は前年比で<strong>約41%増加</strong>しています。</p>
+            <div class="source-note">出典: Google公式ローカル検索インサイト / BrightEdge 2026年調査データ</div>
+        </div>
+    </div>
+
+    <!-- スライド3 -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="slide-number">Slide 03</span>
+            <h2 class="slide-title">【海外事例】AI検索・GBP最適化で圧倒的成果を上げたBtoBの現実</h2>
+        </div>
+        
+        <p>海外の先進的なBtoB企業や製造業は、AI検索時代を見据えてデジタル基盤をどう構築し、成果を出しているのか。具体的な2つの成功事例を詳しく紐解きます。</p>
+
+        <div class="grid-2">
+            <div class="card-box">
+                <h4>🇺🇸 事例1：米国の産業機械・パーツサプライヤー（製造業）</h4>
+                <p><strong>【背景】</strong> 以前は業界誌広告やカタログが中心で、Webからの新規引き合いは皆無。「うちはBtoCではないのでマップは無関係」と放置していた。<br>
+                <strong>【施策】</strong> GBPのカテゴリを「Industrial Equipment Supplier」に厳密に設定。加工技術や素材名をホームページとGBPに構造化して掲載し、工場や社員の写真を毎月継続投稿。<br>
+                <strong>【成果】</strong> AI検索（ChatGPTやGoogle AI）が「近隣で〇〇加工ができる企業」をレコメンドする際にトップ選出され、マップ経由のウェブサイト訪問が数倍に跳ね上がり、新規の見積もり依頼が激増。</p>
+            </div>
+            <div class="card-box">
+                <h4>🇺🇸 事例2：米国の商業用ビルメンテナンス（専門BtoBサービス）</h4>
+                <p><strong>【背景】</strong> 競合がひしめく地域で価格競争に巻き込まれ、疲弊していた。<br>
+                <strong>【施策】</strong> 施設の総務やビル管理者から「迅速な対応」「正確な仕様対応」といった具体的な業務エピソードを含む質の高いクチコミを継続的に収集。HPにもAIが読み込みやすいFAQ（よくある質問）を網羅。<br>
+                <strong>【成果】</strong> Googleマップの評価が星4.8で安定。AI検索の「信頼性シグナル」として強く働き、地域名＋専門業種の検索でトップ表示を独占、安定的なリード獲得に成功。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- スライド4 -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="slide-number">Slide 04</span>
+            <h2 class="slide-title">【国内事例】地方の非飲食業・製造業が掴んだ「攻めのデジタル資産」</h2>
+        </div>
+        
+        <p>日本国内の地方都市（地方の製造業・専門建設業など）における、AI・GBP最適化のリアルな成功アプローチを確認します。</p>
+
+        <div class="grid-2">
+            <div class="card-box">
+                <h4>🇯🇵 事例3：地方の精密板金・金属加工業（製造業）</h4>
+                <p><strong>【背景】</strong> 若手採用が全くうまくいかず、ハローワーク依存。高齢化する既存顧客に代わる新規Web集客を模索していた。<br>
+                <strong>【施策】</strong> GBPを完全整備（保有機械リスト、工場内観、働く社員の表情を写真と詳細説明で掲載）。「地方のホワイトな製造業」として職場の環境やリアルな評価を可視化し、HPとGBPで連動発信。<br>
+                <strong>【成果】</strong> 求職者がスマホで企業名を検索した際、マップ上の写真や社員の姿を見て「安心できる近代的な企業」と直感。求人広告費を一切かけず、マップ経由のHPアクセスから毎月直接のエントリーを獲得。</p>
+            </div>
+            <div class="card-box">
+                <h4>🇯🇵 事例4：地域の専門建設・インフラ関連企業（BtoB・BtoG）</h4>
+                <p><strong>【背景】</strong> 「ホームページは名刺代わりで十分」と考えていたが、元請け企業や自治体がパートナー選定時にネット上の実態を厳しくチェックするように。<br>
+                <strong>【施策】</strong> 複数拠点のGBP情報を完全一致（NAP情報の統一）。AI検索が「地域の信頼できる施工会社」として自社を拾い上げるよう、施工実績や規格データをホームページ上で整理・構造化。<br>
+                <strong>【成果】</strong> 元請けからの新規取引打診時、「ネットで検索した際にマップとHPで情報が正確に一貫しており、信頼できた」と評価されるケースが急増し、受注単価の高い大型案件につながった。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- スライド5 -->
+    <div class="slide">
+        <div class="slide-header">
+            <span class="slide-number">Slide 05</span>
+            <h2 class="slide-title">まとめ：明日から自社で取り組むべきアクション</h2>
+        </div>
+        
+        <div class="lead-text">
+            AI検索時代を勝ち抜く鉄則は、特殊な裏技ではなく「正しい情報の構造化」と「リアルな信頼の蓄積（GBPの継続運用）」です。
+        </div>
+
+        <p>自社のリソースだけで継続することが難しい場合は、外部の専門パートナーを活用し、営業マン1人分のコストよりも遥かに安価で永続的な「デジタル資産」を構築することが、これからの地方企業・非飲食業の生存戦略となります。</p>
+        
+        <div class="card-box" style="margin-top: 24px; border-left: 4px solid var(--primary);">
+            <h4>💡 本日の勉強会の重要ポイント</h4>
+            <ul>
+                <li>検索は「キーワード」から「AIの要約・レコメンド」へシフトした</li>
+                <li>製造業・BtoB・採用において、GoogleマップとGBPは会社の「通信簿」である</li>
+                <li>海外・国内ともに、情報を構造化し、リアルな評価を集めた企業が勝っている</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
